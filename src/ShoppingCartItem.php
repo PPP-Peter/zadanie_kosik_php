@@ -25,6 +25,7 @@ class ShoppingCartItem
 
     /**
      * @param int $quantity
+     * @return int
      */
     public function setQuantity(int $quantity): int
     {
@@ -66,7 +67,7 @@ class ShoppingCartItem
     /**
      * Get Price with Tax
      *
-     * @param int $tax_rate
+     * @param float $tax_rate
      * @return float
      */
     public function getPriceWithTax(float $tax_rate = 20) : float
@@ -92,7 +93,7 @@ class ShoppingCartItem
     /**
      * Get Price with Discount
      *
-     * @param int $discount
+     * @param float $discount
      * @return float
      */
     public function getPriceWithDiscont(float $discount) : float
@@ -105,7 +106,7 @@ class ShoppingCartItem
     /**
      * Get Total Sum
      *
-     * @param int $specialSaleDiscount
+     * @param int|null $specialSaleDiscount
      * @return float
      */
     public function totalSum(int $specialSaleDiscount = null) : float

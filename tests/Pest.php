@@ -41,7 +41,12 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function defaultItem()
+/**
+ * set default ShoppingCartItem
+ *
+ * @return ShoppingCartItem
+ */
+function defaultItem(): ShoppingCartItem
 {
  return new ShoppingCartItem(1,'product1', 2.90,3);
 }
