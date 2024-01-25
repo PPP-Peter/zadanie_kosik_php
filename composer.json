@@ -1,0 +1,22 @@
+{
+    "name": "eworkssk/zadanie-php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Eworkssk\\ZadaniePhp\\": "src"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.32"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "pest": [
+            "./vendor/bin/pest"
+        ]
+    }
+}
